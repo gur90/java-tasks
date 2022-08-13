@@ -2,12 +2,11 @@ public class HelloInteger {
     public static void main(String[] args) {
         goodMorningInteger();
         findSquare();
-        //helloByte();
+        helloByte();
         findRectangle();
         findCube();
         hallyHelloByte();
         numberOfGrains();
-
     }
 
     public static void goodMorningInteger() {
@@ -23,7 +22,6 @@ public class HelloInteger {
         int perimeter = 4 * myFirstVariable;
         System.out.println("The square is " + square);
         System.out.println("the perimeter is " + perimeter);
-
     }
 
     public static void findRectangle() {
@@ -41,16 +39,16 @@ public class HelloInteger {
         int square = 6 * (a * a);
         System.out.println(perimeter);
         System.out.println(square);
-
     }
 
     public static void numberOfGrains() {
         long a = 2L;
         int b = 63;
-        long result = (long) (Math.pow(a, b) -1);
+        long result = (long) (Math.pow(a, b) - 1);
         System.out.println(result);
     }
-    /*public static void helloByte() {
+
+    public static void helloByte() {
         byte a = 111;
         short b = 1111;
         int c = 1_111_111_111;
@@ -59,10 +57,9 @@ public class HelloInteger {
         System.out.println(b);
         System.out.println(c);
         System.out.println(d);
-    }*/
+    }
 
     public static void hallyHelloByte() {
         System.out.println("Hello");
     }
 }
-
