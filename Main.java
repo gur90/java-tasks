@@ -6,8 +6,14 @@ public class Main {
     }
     public static void showInfo(){
         System.out.println("look at this info");
+        System.out.println("look at this info");
     }
     public static void callMe(){
+        System.out.println("please, call me 123456");
+        System.out.println("please, call me 123456");
+        System.out.println("please, call me 123456");
+        System.out.println("please, call me 123456");
+        System.out.println("please, call me 123456");
         System.out.println("please, call me 123456");
     }
 }
