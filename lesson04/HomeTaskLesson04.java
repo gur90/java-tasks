@@ -5,6 +5,8 @@ public class HomeTaskLesson04 {
         personProfession();
         information();
         cutSymbol();
+        testingBool();
+        readAboutPrintf();
     }
 
     public static void personProfession() {
@@ -29,5 +31,18 @@ public class HomeTaskLesson04 {
         String messageAfterCutting = message.substring(0, 5).toLowerCase() + "воспрещён";
         String completeMessage = "Осторожно, " + messageAfterCutting;
         System.out.println(completeMessage.toUpperCase());
+    }
+    public static void testingBool(){
+        boolean a = (7+8)*5 > 7+8*5;
+        boolean b = (7+8)*4 != 7+4*5;
+        boolean c = 3+4 > 9+1 & 16-5 > 3*4;
+        boolean d = 16/2 < 6+2 | 4+5 <= 4*5;
+        boolean e = !(3*4 < 7+8);
+        System.out.println("-------------");
+        System.out.println(a + "\n" + b + "\n" + c + "\n" + d + "\n" + e);
+    }
+    public static void readAboutPrintf(){
+        double a = 03.09;
+        System.out.printf("Hello,  %s!%n", "reader");
     }
 }
