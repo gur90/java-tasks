@@ -1,10 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         buyAlcohol();
-        toDetermineSeason(6);
-        String result = testSeason(1);
-        System.out.println("The season is " + result);
-        System.out.println("---------");
+        toDetermineSeason(4);
         System.out.println(getTheTablet(2));
     }
 
@@ -36,60 +33,33 @@ public class Main {
     public static void toDetermineSeason(int month) {
         String season = "";
         switch (month) {
+            case (12):
             case (1):
-                System.out.println(month + " is winter");
-                break;
             case (2):
                 System.out.println(month + " is winter");
                 break;
             case (3):
-                System.out.println(month + " is spting");
-                break;
             case (4):
-                System.out.println(month + " is spring");
-                break;
             case (5):
                 System.out.println(month + " is spring");
                 break;
             case (6):
-                System.out.println(month + " is summer");
-                break;
             case (7):
-                System.out.println(month + " is summer");
-                break;
             case (8):
                 System.out.println(month + " is summer");
                 break;
             case (9):
-                System.out.println(month + " is automn");
-                break;
             case (10):
-                System.out.println(month + " is automn");
-                break;
             case (11):
                 System.out.println(month + " is automn");
                 break;
-            case (12):
-                System.out.println(month + " is winter");
-                break;
+
             default:
                 System.out.println("invalid month");
         }
         System.out.println("-----------");
     }
 
-    public static String testSeason(int month) {
-        String season = "";
-        switch (month) {
-            case (1):
-                season = "winter";
-                break;
-            default:
-                season = "invalid";
-
-        }
-        return season;
-    }
 
     public static String getTheTablet(int number) {
         String tablet = "";
