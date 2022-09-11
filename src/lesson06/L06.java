@@ -1,4 +1,4 @@
-public class Main {
+public class L06 {
     public static void main(String[] args) {
         buyAlcohol();
         toDetermineSeason(4);

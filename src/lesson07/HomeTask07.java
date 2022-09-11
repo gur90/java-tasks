@@ -9,7 +9,6 @@ public class HomeTask07 {
         split();
         salaryIssuance(20);
         split();
-showData(3,12,2020);
 
     }
 
@@ -76,11 +75,6 @@ showData(3,12,2020);
         } else {
             System.out.println("error");
         }
-    }
-
-    public static void showData(int day, int month, int year) {
-       String split = "-";
-
     }
 
 }
