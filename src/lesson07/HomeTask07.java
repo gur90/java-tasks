@@ -1,3 +1,5 @@
+package lesson07;
+
 public class HomeTask07 {
     public static void main(String[] args) {
         catchTheIntruder(79.5);
@@ -9,6 +11,7 @@ public class HomeTask07 {
         split();
         salaryIssuance(20);
         split();
+        printData(4, 12, 2022);
 
     }
 
@@ -77,4 +80,41 @@ public class HomeTask07 {
         }
     }
 
+    public static void printData(int day, int month, int year) {
+        System.out.println(checkDay(day) + "-" + checkMonth(month) + "-" + checkYear(year));
+    }
+
+    public static String checkDay(int day) {
+        String result = "";
+        if (day < 10) {
+            result = "0" + day;
+        } else if (day > 31) {
+            result = "error";
+        } else {
+            result = "" + day;
+        }
+        return result;
+    }
+
+    public static String checkMonth(int month) {
+        String result = "";
+        if (month < 10) {
+            result = "0" + month;
+        } else if (month > 12) {
+            result = "error";
+        } else {
+            result = "" + month;
+        }
+        return result;
+    }
+
+    public static String checkYear(int year) {
+        String result = "";
+        if (year < 2022) {
+            result = "error";
+        } else {
+            result = "" + year;
+        }
+        return result;
+    }
 }
