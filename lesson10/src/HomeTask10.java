@@ -24,7 +24,7 @@ public class HomeTask10 {
 
     public static boolean teenNumbers(int one, int two, int three) {
         boolean answer = false;
-        if ((one <= 19 && one >= 13) || (two <= 19 && two>=13) || (three <= 19 && three>=13)) {
+        if ((one <= 19 && one >= 13) || (two <= 19 && two >= 13) || (three <= 19 && three >= 13)) {
             answer = true;
         } else {
             answer = false;
