@@ -1,6 +1,7 @@
 public class HomeTask {
     public static void main(String[] args) {
-        simpleNumber(8);
+        simpleNumber(149);
+        System.out.println(primeNumber(149));
     }
 
     public static void simpleNumber(int number) {
@@ -13,4 +14,7 @@ public class HomeTask {
         System.out.println("it is simple");
     }
 
+    public static boolean primeNumber(int n) {
+        return n / n == 1 && n != 1 && n % 2 != 0;
+    }
 }
