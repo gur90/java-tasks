@@ -42,11 +42,11 @@ public class LogicalTasks04 {
     }
 
     public static String fizzString(String str) {
-        if (str.startsWith("f") && str.endsWith("b")) {
+        if (str.substring(0,1)=="f" && str.substring(str.length-1)=="b") {
             return "FizzBuzz";
-        } else if (str.endsWith("b")) {
+        } else if (str.length-1)=="b") {
             return "Buzz";
-        } else if (str.startsWith("f")) {
+        } else if (str.substring(0,1)=="f) {
             return "Fizz";
         } else {
             return str;
