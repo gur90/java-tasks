@@ -48,13 +48,17 @@ public class LogicalTasks04 {
             return "Buzz";
         } else if (str.startsWith("f")) {
             return "Fizz";
-        } else return str;
+        } else {
+            return str;
+        }
     }
 
     public static boolean inOrder(int a, int b, int c, boolean bOk) {
         if (b > a && c > b) {
             return true;
-        } else return bOk && c > b;
+        } else {
+            return bOk && c > b;
+        }
     }
 
     public static boolean lessBy10(int a, int b, int c) {
@@ -68,8 +72,9 @@ public class LogicalTasks04 {
             return 5;
         } else if (b != a && c != a) {
             return 0;
-        }
+        } else {
         return 1;
+        }
     }
 
     public static boolean shareDigit(int a, int b) {
@@ -79,15 +84,19 @@ public class LogicalTasks04 {
     public static boolean squirrelPlay(int temp, boolean summer) {
         if (temp >= 60 && temp <= 90) {
             return true;
-        } else return summer && temp <= 100;
+        } else {
+            return summer && temp <= 100;
+        }
     }
 
     public static String alarmClock(int weekday, boolean vacation) {
         if (weekday >= 1 && weekday <= 5 && !vacation) {
             return "7:00";
         }
-        if ((weekday == 0 || weekday == 6) && vacation) {
+        else if ((weekday == 0 || weekday == 6) && vacation) {
             return "off";
-        } else return "10:00";
+        } else {
+            return "10:00";
+        }
     }
 }
