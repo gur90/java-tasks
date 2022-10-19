@@ -11,7 +11,6 @@ public class Geometry {
         triangleFive();
         System.out.println("--------");
         triangleSix();
-
     }
 
     public static void triangle() {
