@@ -1,7 +1,23 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        dinner();
-        takeASip(24);
+        //dinner();
+        //takeASip(24);
+        helloGay("Artur", 58);
+    }
+
+    private static void helloGay(String name, int age) {
+        Scanner input = new Scanner(System.in);
+        System.out.printf("Hello, my dear friend %s! Are you sure that you are %d years old?\n", name, age);
+        String answer = input.next();
+        if (answer.equals("yes")) {
+            System.out.println("Welcome!");
+        } else if (answer.equals("no")) {
+            System.out.println("Think carefully!");
+        } else {
+            System.out.println("You did not hit the right buttons.");
+        }
     }
 
     private static void takeASip(int button) {
