@@ -19,6 +19,14 @@ public class ClassWork15_11 {
             animals[i] = "Rabbit";
         }
         aboutAll(animals);
+        change(animals, "crocodile");
+    }
+
+    private static void change(String[]input, String newAnimal) {
+        for (int i = 0; i <input.length ; i++) {
+            input[i]= newAnimal;
+            System.out.println("It is a " + input[i] + " , what a wonderful animal!") ;
+        }
     }
 
     public static void tellMe(String x) {
