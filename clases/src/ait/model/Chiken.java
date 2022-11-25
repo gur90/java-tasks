@@ -5,15 +5,22 @@ public class Chiken {
     public double weight;
     public boolean isFemale;
     private double cost;
-
+public double getCost(){
+    return this.cost;
+}
+public  void setCost(double newCost){
+    this.cost=newCost;
+}
    public Chiken(){
 
    }
-   public Chiken (String name, double weight,boolean isFemale){
+   public Chiken (String name, double weight,boolean isFemale,double cost){
        this.name=name;
        this.weight=weight;
        this.isFemale=isFemale;
+       this.cost=cost;
    }
+
    public  void say(){
        System.out.println("Hello, i am chiken. My name is "+ name+". My weight is "+ weight+ ". And my 'isFemale' is "+ isFemale+ ".");
    }
