@@ -1,7 +1,6 @@
-package hw.ait.controller;
+package Climbing;
 
-import hw.ait.model.Mountaineer;
-import hw.ait.model.TheGroupOfClimbers;
+import java.util.Arrays;
 
 public class MainMountain {
     public static void main(String[] args) {
@@ -18,8 +17,16 @@ public class MainMountain {
         );
         System.out.println(climbing);
         climbing.addMember(new Mountaineer("Natasha", 54, 3, "hook"));
-        System.out.println(climbing);
+        climbing.addMember(new Mountaineer("Anna", 32, 2, "magnesia"));
+        climbing.addMember(new Mountaineer("Julia", 30, 3, "rock shoes"));
+        climbing.addMember(new Mountaineer("Alex", 35, 5, "safety rope"));
         System.out.println("-----------");
-        climbing.findMember("Natasha");
+        System.out.println(Arrays.toString(climbing.getAllByEquipment("rock shoes")));
+        System.out.println("==========");
+        climbing.sortByAge();
+        System.out.println("==========");
+        System.out.println(Arrays.toString(climbing.sortByLevel()));
+        System.out.println("____DELETE______");
+        System.out.println(Arrays.toString(climbing.deleteByName("vadim")));
     }
 }

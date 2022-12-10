@@ -1,4 +1,4 @@
-package hw.ait.model;
+package Climbing;
 
 public class Mountaineer {
     private String name;
@@ -50,6 +50,6 @@ public class Mountaineer {
     }
 
     public String toString() {
-        return "Mountaineer name: " + this.name + ", \n age: " + this.age + ", \n level: " + this.level + ", \n equipment: " + this.equipment + "\n";
+        return "MOUNTAINEER NAME: " + this.name + ", \n age: " + this.age + ", \n level: " + this.level + ", \n equipment: " + this.equipment + "\n";
     }
 }
