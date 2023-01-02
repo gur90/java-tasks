@@ -67,14 +67,22 @@ public class Phone {
                 i--;
             }
         }
-        return this;// правильно ли так возвращать обьект телефона???
+        return this;
     }
 
     public void getNumberByName(String name) {
+        String result = "";
         for (int i = 0; i < contacts.size(); i++) {
             if (contacts.get(i).getContactName() == name) {
                 System.out.println(contacts.get(i).getContactName() + " " + contacts.get(i).getContactNumber());
             }
+            if (name.length() == 0) {
+                result = "empty string";
+            }
+            if (!contacts.get(i).getContactName().equals(name)) {
+                result = "contact does not find";
+            }
         }
+        System.out.println(result);
     }
 }

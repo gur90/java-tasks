@@ -19,5 +19,6 @@ public class Main {
         System.out.println("========");
         samsung.deleteContactByName("Anna");
         System.out.println(samsung);
+        samsung.getNumberByName("Vova");
     }
 }
