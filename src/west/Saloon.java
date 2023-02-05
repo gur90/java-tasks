@@ -8,7 +8,6 @@ public class Saloon {
 
     public Saloon(String title) {
         this.title = title;
-
     }
 
     public void serveDrink() {
