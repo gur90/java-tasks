@@ -34,10 +34,17 @@ public class OptionsWithHash {
         listOfPandas.add(new OptionsWithPandas("Lion", 10));
         listOfPandas.add(new OptionsWithPandas("Lion", 11));
         listOfPandas.add(new OptionsWithPandas("Georg", 8));
-
+        HashMap<OptionsWithPandas, Integer> pandasList = new HashMap<>();
         for (OptionsWithPandas el : listOfPandas) {
-            System.out.println(el + "" + Collections.frequency(listOfPandas, el));
+            if (!pandasList.containsKey(el)) {
+                pandasList.put(el, 1);
+
+            } else {
+                int value = pandasList.get(el) + 1;
+                pandasList.put(el, value);
+            }
         }
+        System.out.println(pandasList);
     }
 
     public static Set<OptionsWithPandas> getDifference(List<OptionsWithPandas> input1, List<OptionsWithPandas> input2) {
