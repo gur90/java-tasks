@@ -54,7 +54,8 @@ public class Patient implements Comparable<Patient> {
 
     @Override
     public int compareTo(Patient o) {
-        return Integer.compare(dateOfComming.getYear(), o.dateOfComming.getYear());
+        //return Integer.compare(dateOfComming.getYear(), o.dateOfComming.getYear());
+        return dateOfComming.compareTo(o.dateOfComming);
     }
 
     @Override
