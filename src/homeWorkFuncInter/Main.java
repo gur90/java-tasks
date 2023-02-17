@@ -20,7 +20,6 @@ public class Main {
             return output;
         };
         System.out.println(varargsInterface.returnTheLongest("leo", "leonid", "hello", "kopa", "leon", "leolokol"));
-        // System.out.println(ex.myMethod("hello", 6));
         System.out.println(dosmth("hello", 6, (String a, int b) -> a.repeat(b)));
     }
 

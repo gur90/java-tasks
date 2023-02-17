@@ -8,7 +8,7 @@ public class Main {
         FuncInterface divis24 = (n) -> {
             return n % 24 == 0;
         };
-        // System.out.println(divis24.division12(48));
+        System.out.println(divis24.division12(48));
         StringInterface strings = (a, b) -> {
             if (a.length() > b.length()) {
                 return a;

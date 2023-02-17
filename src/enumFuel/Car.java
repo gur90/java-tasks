@@ -10,7 +10,6 @@ public class Car {
     }
 
     public double priceForFullTank() {
-
         return volume * fuel.getPrice();
     }
 }
